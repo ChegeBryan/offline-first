@@ -6,7 +6,7 @@ import 'package:offline_first/utils/result.dart';
 class TodosService {
   final NetworkClient _networkClient;
 
-  TodosService(this._networkClient);
+  const TodosService(this._networkClient);
 
   Future<Result<Todo>> todos() async {
     try {
